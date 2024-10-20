@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Realms Minecraft Server - Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="status.html" class="nav-link">Server Status</a>
+        <a href="#discord" class="nav-link">Join Discord</a>
+        <a href="#about" class="nav-link">About Us</a>
+    </nav>
+
+    <!-- Main Container for Server Info -->
+    <div class="container">
+        <header class="main-header">
+            <h1>Pixel Realms Minecraft Server - Server Status</h1>
+            <p>All details about the server at your fingertips!</p>
+            <!-- Example image for the status page -->
+            <img src="status-logo.png" alt="Status Logo" class="header-img">
+        </header>
+
+        <!-- Server Status Section -->
+        <section id="server-info" class="status-section">
+            <h2>Server Details</h2>
+
+            <div class="server-details">
+                <div class="detail-box">
+                    <img src="ip-icon.png" alt="IP Icon" class="info-icon">
+                    <h3>Server IP: </h3>
+                    <p id="server-ip">Loading...</p>
+                </div>
+                <div class="detail-box">
+                    <img src="port-icon.png" alt="Port Icon" class="info-icon">
+                    <h3>Port: </h3>
+                    <p id="server-port">25703</p>
+                </div>
+                <div class="detail-box">
+                    <img src="version-icon.png" alt="Version Icon" class="info-icon">
+                    <h3>Version: </h3>
+                    <p id="server-version">Loading...</p>
+                </div>
+                <div class="detail-box">
+                    <img src="motd-icon.png" alt="MOTD Icon" class="info-icon">
+                    <h3>MOTD:‎ </h3>
+                    <p id="server-motd">Loading...</p>
+                </div>
+                <div class="detail-box">
+                    <img src="uptime-icon.png" alt="Uptime Icon" class="info-icon">
+                    <h3>Uptime:‎ </h3>
+                    <p id="server-uptime">Loading...</p>
+                </div>
+                <div class="detail-box">
+                    <img src="players-icon.png" alt="Players Icon" class="info-icon">
+                    <h3>Players Online:‎ </h3>
+                    <p id="player-count">Loading...</p>
+                </div>
+            </div>
+
+            <div id="player-list">
+                <h3>Player List:‎ </h3>
+                <ul id="player-names">Loading...</ul>
+            </div>
+        </section>
+
+        <!-- Discord Section -->
+        <section id="discord" class="discord-section">
+            <h2>Join Our Discord</h2>
+            <a href="https://discord.gg/72kqTwyjZu" class="discord-link">Join Now</a>
+            <div class="discord-info">
+                <p>Stay connected with players and events!</p>
+                <div class="discord-stats">
+                    <div class="detail-box">
+                        <img src="discord-icon.png" alt="Discord Icon" class="info-icon">
+                        <h3>Discord Name:‎ </h3>
+                        <p>Pixel Realms</p>
+                    </div>
+                    <div class="detail-box">
+                        <img src="members-icon.png" alt="Members Icon" class="info-icon">
+                        <h3>Members Online:‎ </h3>
+                        <p id="discord-members">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="status-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* Color extracted from the image */
+:root {
+    --custom-green: #43A047; /* New green color from the image */
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #a3d9a5, #d2f7d0); /* Light green and white-green */
+    color: #333;
+    animation: fadeIn 2s ease-in;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--custom-green); /* Updated Navbar color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Main Header */
+.main-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    color: var(--custom-green); /* Updated Header color */
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flexbox Layout for Info Sections */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns sections at the top */
+}
+
+/* Minecraft Info on the Left */
+.mc-info {
+    width: 30%;
+}
+
+.mc-info h2 {
+    font-size: 28px;
+    color: var(--custom-green); /* Updated Minecraft Section title */
+}
+
+.mc-info .detail-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--custom-green); /* Updated to match the green color */
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mc-info .info-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Center Image */
+.center-img {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.center-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Discord Info on the Right */
+.discord-info {
+    width: 30%;
+    text-align: right;
+}
+
+.discord-info h2 {
+    font-size: 28px;
+    color: var(--custom-green); /* Updated Discord Section title */
+}
+
+/* Discord Join Button */
+.discord-info a {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: var(--custom-green); /* Updated Join Now button color */
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
+}
+
+.discord-info a::before {
+    content: '🎮'; /* Discord Icon (Controller Emoji) */
+    font-size: 24px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.discord-info a:hover {
+    background-color: #388e3c; /* Slightly darker green on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Lift on hover */
+    transition: all 0.3s ease-in-out;
+}
+/* Discord Stats */
+.discord-stats {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
